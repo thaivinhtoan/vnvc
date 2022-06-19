@@ -1,0 +1,62 @@
+<div class="mt-4">
+    <h3>Cập nhật đơn đăng ký tiêm</h3>
+
+    <form class="mt-4" method="POST" action="/tiems/{{tiem._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="hoten">Họ tên người tiêm</label>
+            <input type="text" class="form-control" id="hoten" name="hoten" value="{{tiem.hoten}}">
+        </div>
+        <div class="form-group">
+            <label for="ngaysinh">Ngày sinh người tiêm</label>
+            <input type="date" class="form-control" id="ngaysinh" name="ngaysinh" value="{{tiem.ngaysinh}}">
+        </div>
+        <div class="form-group">
+            <label for="gioitinh">Giới tính</label>
+            <input type="text" class="form-control" id="gioitinh" name="gioitinh" value="{{tiem.gioitinh}}">
+        </div>
+        <div class="form-group">
+            <label for="tinh">Tỉnh thành</label>
+            <input type="text" class="form-control" id="tinh" name="tinh" value="{{tiem.tinh}}">
+        </div>
+        <div class="form-group">
+            <label for="quan">Quận huyện</label>
+            <input type="text" class="form-control" id="quan" name="quan" value="{{tiem.quan}}">
+        </div>
+        <div class="form-group">
+            <label for="xa">Phường xã</label>
+            <input type="text" class="form-control" id="xa" name="xa" value="{{tiem.xa}}">
+        </div>
+        <div class="form-group">
+            <label for="dc">Số nhà, tên đường</label>
+            <input type="text" class="form-control" id="dc" name="dc" value="{{tiem.dc}}">
+        </div>
+        <h2>THÔNG TIN LIÊN HỆ</h2>
+        <div class="form-group">
+            <label for="hotenlienhe">Họ tên người liên hệ</label>
+            <input type="text" class="form-control" id="hotenlienhe" name="hotenlienhe" value="{{tiem.hotenlienhe}}">
+        </div>
+        <div class="form-group">
+            <label for="moiquanhe">Mối quan hệ với người tiêm</label>
+            <input type="text" class="form-control" id="moiquanhe" name="moiquanhe" value="{{tiem.moiquanhe}}">
+        </div>
+        <div class="form-group">
+            <label for="sdt">Số điện thoại người liên hệ</label>
+            <input type="text" class="form-control" id="sdt" name="sdt" value="{{tiem.sdt}}">
+        </div>
+        <h2>THÔNG TIN DỊCH VỤ</h2>
+        <div class="form-group">
+            <label for="loaivacxin">Loại vacxin muốn đăng ký</label>
+            <input type="text" class="form-control" id="loaivacxin" name="loaivacxin" value="{{tiem.loaivacxin}}">
+        </div>
+        <div class="form-group">
+            <label for="trungtam">Trung tâm VNVC muốn tiêm</label>
+            <input type="text" class="form-control" id="trungtam" name="trungtam" value="{{tiem.trungtam}}">
+        </div>
+        <div class="form-group">
+            <label for="ngaytiem">Ngày mong muốn tiêm</label>
+            <input type="date" class="form-control" id="ngaytiem" name="ngaytiem" value="{{tiem.ngaytiem}}">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Lưu lại</button>
+    </form>
+</div>
